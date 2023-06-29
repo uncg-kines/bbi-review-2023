@@ -88,7 +88,7 @@ for xid in IDX:
                 ax[ii, j].plot(t, eeg, lw=0.3, alpha=0.75, label=label)
                 ax[ii, j].plot(t, eeg_agg, 'k--', lw=0.35, alpha=0.8)
                 if ii == 3: ax[ii, j].set_xlabel('time (s)')
-                ax[ii, j].set_ylabel('power ($\mu V^2/Hz$)')
+                ax[ii, j].set_ylabel('power ($\mu V^2$/Hz)')
                 ax[ii, j].set_title(band)
                 ax[ii, j].set_title(xid, loc='left', fontsize=7)
                 ax[ii, j].set_title(lobe, loc='right', fontsize=7)
@@ -101,7 +101,7 @@ for xid in IDX:
 
         ax[ii, 2].plot(t, com, lw=0.3)
         if ii == 3: ax[ii, 2].set_xlabel('time (s)')
-        ax[ii, 2].set_ylabel('Accel. $(m/s^2)$')
+        ax[ii, 2].set_ylabel('Accel. (m/$s^2$)')
         ax[ii, 2].set_title(com_vars[xvar])
         ax[ii, 2].set_title(xid, loc='left', fontsize=7)
 
