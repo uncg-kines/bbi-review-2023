@@ -52,7 +52,7 @@ funlist = [f0, f1, f2, f3, f4]
 funlab = ['sin(t)',
           '2sin(t)',
           '2sin(t) + 1',
-          '2e5$t^2$+sin(t)+0.1t',
+          '$2x10^5$$t^2$+sin(t)+0.1t',
           'cos(t)']
 
 
@@ -63,7 +63,7 @@ clist = plt.rcParams['axes.prop_cycle'].by_key()['color']
 
 # plot
 fig, ax = plt.subplots(5, 3,
-                       gridspec_kw={'width_ratios': [1, 3, 1]},
+                       gridspec_kw={'width_ratios': [1, 3, 1.2]},
                        figsize=(5.5, 5.6))
 plt.rcParams.update({'font.size': 8})
 for ii, fn in enumerate(funlist):
